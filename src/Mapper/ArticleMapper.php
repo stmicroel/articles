@@ -15,7 +15,7 @@ readonly class ArticleMapper implements JsonSerializable {
 	 *
 	 * @param Article $article Article entity
 	 */
-	public function __construct(private readonly Article $article)
+	public function __construct(private Article $article)
 	{
 	}
 

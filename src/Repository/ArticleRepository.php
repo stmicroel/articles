@@ -16,6 +16,12 @@ class ArticleRepository extends ServiceEntityRepository
         parent::__construct($registry, Article::class);
     }
 
+	/**
+	 * Retrieve tags by hash
+	 *
+	 * @param string|null $tagsHash Tags hash
+	 * @return Article[]
+	 */
 	public function findByHash(?string $tagsHash)
 	{
 		$query = $this->createQueryBuilder('a');

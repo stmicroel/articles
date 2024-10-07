@@ -3,7 +3,6 @@
 namespace App\Service;
 
 use App\Entity\Article;
-use App\Entity\Tag;
 use App\Repository\ArticleRepository;
 use App\Exception\ValidationException;
 use App\Repository\TagRepository;

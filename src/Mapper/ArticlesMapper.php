@@ -2,7 +2,6 @@
 
 namespace App\Mapper;
 
-use App\Entity\Tag;
 use App\Entity\Article;
 use JsonSerializable;
 

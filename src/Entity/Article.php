@@ -30,7 +30,7 @@ class Article
     /**
      * @var Collection<int, Tag>
      */
-    #[ORM\ManyToMany(targetEntity: "Tag")]
+    #[ORM\ManyToMany(targetEntity: "Tag", fetch: 'EAGER')]
 	#[ORM\JoinTable(name: "article_tag")]
     private Collection $tags;
 
